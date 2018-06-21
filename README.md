@@ -21,8 +21,8 @@
 ## 官方联系方式
 
 ### 官方QQ群
-
-![查看页面](https://github.com/sparkChainBaas/baas/blob/master/doc/sp.png)
+  594629943
+![QQ群：594629943](./doc/sp.png)
 
 ### 官方技术交流论坛
   欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
@@ -37,6 +37,6 @@
 
  - <a href="http://www.moac.io/">MOAC</a>,github地址为：ttps://github.com/MOACChain/,开发者文档地址：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 ,浏览器地址：http://explorer.moac.io/home
 
- - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
+ - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：805362142
 
- ![查看页面](https://github.com/sparkChainBaas/baas/blob/master/doc/nc.png)
+ ![QQ群：805362142](./doc/nc.png)

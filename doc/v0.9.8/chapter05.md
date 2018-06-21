@@ -139,7 +139,7 @@ accounts:[{chainCode:"moac",account:"0x194a45117c23bb2adca4ee51b7df3c12a2804c47"
 
 ### 官方QQ群
 
-![查看页面](../sp.png)
+![QQ群：594629943](../sp.png)
 
 ### 官方技术交流论坛
   欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
@@ -156,7 +156,7 @@ accounts:[{chainCode:"moac",account:"0x194a45117c23bb2adca4ee51b7df3c12a2804c47"
 
  - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
 
- ![查看页面](../nc.png)
+ ![QQ群：805362142](../nc.png)
 
 
 
