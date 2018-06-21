@@ -22,7 +22,7 @@
 
 ### 官方QQ群
 
-![查看页面](./doc/sp.png)
+![查看页面](https://github.com/sparkChainBaas/baas/blob/master/doc/sp.png)
 
 ### 官方技术交流论坛
   欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
@@ -39,4 +39,4 @@
 
  - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
 
- ![查看页面](./doc/nc.png)
+ ![查看页面](https://github.com/sparkChainBaas/baas/blob/master/doc/nc.png)
