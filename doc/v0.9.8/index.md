@@ -7,6 +7,7 @@
    - 提供流水查询的接口
    - 提供基本的敏感词过滤功能
 
+### <a href="./doc/v0.9.8/index.md"> 火花链BaaS接入平台 0.9.8版API目录</a>
 <a href="./chapter01.md#1. 引言">1. 引言</a>  <br>
 <a href="./chapter01.md#1.1. 概述">1.1. 概述</a>  <br>
 <a href="./chapter01.md#1.2. 名词解释">1.2. 名词解释</a>  <br>
