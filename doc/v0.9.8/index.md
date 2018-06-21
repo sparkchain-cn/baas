@@ -7,7 +7,7 @@
    - 提供流水查询的接口
    - 提供基本的敏感词过滤功能
 
-### <a href="./doc/v0.9.8/index.md"> 火花链BaaS接入平台 0.9.8版API目录</a>
+### 火花链BaaS接入平台 0.9.8版API目录
 <a href="./chapter01.md#1. 引言">1. 引言</a>  <br>
 <a href="./chapter01.md#1.1. 概述">1.1. 概述</a>  <br>
 <a href="./chapter01.md#1.2. 名词解释">1.2. 名词解释</a>  <br>
@@ -55,3 +55,29 @@
 <a href="./chapter08.md#8.1. 注册区块链[可选，待实现]">8.1. 注册区块链[可选，待实现]</a>  <br>
 <a href="./chapter08.md#8.2. 新增通证[可选]">8.2. 新增通证[可选]</a>  <br>
 <a href="./chapter08.md#8.3. 添加通证[可选，待实现]">8.3. 添加通证[可选，待实现]</a>  <br>
+
+
+
+
+## 官方联系方式
+
+### 官方QQ群
+
+![查看页面](./sp.png)
+
+### 官方技术交流论坛
+  欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
+
+### 官方技术BAAS平台
+  欢迎大家到<a href="http://baas.sparkchain.cn/">火花链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
+
+
+## 第三方合作伙伴
+
+ - <a href="https://www.jingtum.com/">井通科技</a>,github地址为：https://github.com/swtcpro ，开发者文档地址：http://developer.jingtum.com/  浏览器地址：http://state.jingtum.com
+
+ - <a href="http://www.moac.io/">MOAC</a>,github地址为：ttps://github.com/MOACChain/,开发者文档地址：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 ,浏览器地址：http://explorer.moac.io/home
+
+ - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
+
+ ![查看页面](./nc.png)
