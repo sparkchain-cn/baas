@@ -7,8 +7,8 @@
    - 提供流水查询的接口
    - 提供基本的敏感词过滤功能
 
-<a href="./chapter01.md#1. 引言">1. 引言</a>  <br>  
-<a href="./chapter01.md#1.1. 概述">1.1. 概述</a>  <br>  
+<a href="./chapter01.md#1. 引言">1. 引言</a>  <br>
+<a href="./chapter01.md#1.1. 概述">1.1. 概述</a>  <br>
 <a href="./chapter01.md#1.2. 名词解释">1.2. 名词解释</a>  <br>
 <a href="./chapter01.md#1.3. 统一说明">1.3. 统一说明</a>  <br>
 <a href="./chapter02.md#2. 接入系统接口">2. 接入系统接口</a>  <br>
@@ -18,8 +18,8 @@
 <a href="./chapter02.md#2.4. 创建用户钱包">2.4. 创建用户钱包</a>  <br>
 <a href="./chapter02.md#2.5. 选择区块链[可选]">2.5. 选择区块链[可选]</a>  <br>
 <a href="./chapter02.md#2.6. 选择通证[可选]">2.6. 选择通证[可选]</a>  <br>
-<a href="./chapter02.md#2.7. 同步所有钱包[可选]">2.7. 同步所有钱包[可选]</a>  <br>
-<a href="./chapter02.md#2.8. 获取系统消息[可选]">2.8. 获取系统消息[可选]</a>  <br>
+<a href="./chapter02.md#2.7. 同步所有钱包[可选]">2.7. 同步所有钱包[可选]</a><br>
+<a href="./chapter02.md#2.8. 获取系统消息[可选]">2.8. 获取系统消息[可选]</a><br>
 <a href="./chapter03.md#3. 用户钱包操作接口">3. 用户钱包操作接口</a>  <br> 
 <a href="./chapter03.md#3.1. 设置支付密码">3.1. 设置支付密码</a>  <br> 
 <a href="./chapter03.md#3.2. 钱包的支付请求">3.2. 钱包的支付请求</a>  <br>
@@ -38,14 +38,14 @@
 <a href="./chapter05.md#5.1. 绑定单个账户">5.1. 绑定单个账户</a>  <br> 
 <a href="./chapter05.md#5.2. 绑定多个账户">5.2. 绑定多个账户</a>  <br> 
 <a href="./chapter05.md#5.3. 关联单个账户">5.3. 关联单个账户</a>  <br> 
-<a href="./chapter05.md#5.4. 关联多个账户">5.4. 关联多个账户</a>  <br> 
-<a href="./chapter06.md#6. 文本上链接口">6. 文本上链接口</a>  <br> 
-<a href="./chapter06.md#6.1. 文本上链">6.1. 文本上链</a>  <br> 
-<a href="./chapter06.md#6.2. 查询文本内容">6.2. 查询文本内容</a>  <br> 
-<a href="./chapter06.md#6.3. 查询文本列表">6.3. 查询文本列表</a>  <br> 
- <a href="./chapter07.md#7. 用户钱包密码接口">7. 用户钱包密码接口</a>  <br>   
-<a href="./chapter07.md#7.1 修改查询密码">7.1 修改查询密码</a>  <br>  
-<a href="./chapter07.md#7.2. 重置查询密码">7.2. 重置查询密码</a>  <br>  
+<a href="./chapter05.md#5.4. 关联多个账户">5.4. 关联多个账户</a>  <br>
+<a href="./chapter06.md#6. 文本上链接口">6. 文本上链接口</a>  <br>
+<a href="./chapter06.md#6.1. 文本上链">6.1. 文本上链</a>  <br>
+<a href="./chapter06.md#6.2. 查询文本内容">6.2. 查询文本内容</a>  <br>
+<a href="./chapter06.md#6.3. 查询文本列表">6.3. 查询文本列表</a>  <br>
+<a href="./chapter07.md#7. 用户钱包密码接口">7. 用户钱包密码接口</a>  <br>
+<a href="./chapter07.md#7.1 修改查询密码">7.1 修改查询密码</a>  <br>
+<a href="./chapter07.md#7.2. 重置查询密码">7.2. 重置查询密码</a>  <br>
 <a href="./chapter07.md#7.3. 验证查询密码">7.3. 验证查询密码</a>  <br>
 <a href="./chapter07.md#7.4. 修改支付密码">7.4. 修改支付密码</a>  <br>
 <a href="./chapter07.md#7.5. 重置支付密码">7.5. 重置支付密码</a>  <br>
