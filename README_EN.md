@@ -4,7 +4,7 @@ SBAP provides a service for the industry projects to access the main blockchains
 
 ## Versions
 
-### <a href="./doc/v0.9.8/index.md"> 火花链BaaS接入平台 0.9.8版API文档</a>
+<!-- ### <a href="./doc/v0.9.8/index.md"> 火花链BaaS接入平台 0.9.8版API文档</a> -->
    - basic interface for transfering, writing text to the blockchain
    - switch blockchains within a method
    - interface for querying the waterflows
