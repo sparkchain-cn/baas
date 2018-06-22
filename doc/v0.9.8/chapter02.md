@@ -252,7 +252,7 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|chainCodes|String|区块链编码（多个值时，用逗号分隔），目前支持jingtum和moac，可二选一|
+|chainCodes|String|区块链编码（多个值时，用逗号分隔），比如：jingtum,moac,eth等|
 - 请求示例图：
 ---
 ![image](./pics/app_selectChain.jpg?raw=true)
@@ -304,7 +304,7 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|chainCode|String|区块链编码(目前支持jingtum和moac)|
+|chainCode|String|区块链编码(比如：jingtum，moac或eth等)|
 |tokenCodes|String|通证编码（多个值时，用逗号分隔）|  
 - 请求示例图：
 ---

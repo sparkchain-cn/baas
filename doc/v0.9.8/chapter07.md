@@ -11,8 +11,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户IdwalletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |oldPassword|String|旧的查询密码|
 |newPassword|String|新的查询密码|  
  
@@ -69,8 +69,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户IdwalletAddr和userId二选一|  
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|  
 - 请求示例图： 
  
 ---
@@ -125,8 +125,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户Id walletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |password|String|查询密码|  
 
 - 请求示例图：  
@@ -183,8 +183,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户IdwalletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |oldPayPassword|String|旧的支付密码|
 |newPayPassword|String|新的支付密码|  
 
@@ -240,8 +240,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户Id walletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 
 - 请求示例图：
 
@@ -298,8 +298,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户IdwalletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |payPassword|String|支付密码|  
 
 - 请求示例图：

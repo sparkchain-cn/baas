@@ -14,8 +14,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户Id walletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |password|String|查询密码|
 |payPassword|String|支付密码|
 - 请求示例图：
@@ -77,7 +77,7 @@
 |srcUserId|String|【三选一】支付方的用户Id（srcWalletAddr、srcUserId 、srcAccount）|
 |srcAccount|String|【三选一】支付方的账户（srcWalletAddr、srcUserId和srcAccount）|
 |payPassword|String|支付方的支付密码|
-|chainCode|String|区块链编码|
+|chainCode|String|区块链编码（比如：jingtum或moac）|
 |tokenCode|String|通证编码(比如：jingtum的SWT、moac的MOAC)|
 |destWalletAddr|String|【三选一】接受方的钱包地址(destWalletAddr、destUserId和destAccount）|
 |destUserId|String|【三选一】接受方的用户Id（destWalletAddr、destUserId和destAccount）|
@@ -142,8 +142,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|【二选一】用户IdwalletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |chainCode|String|【可选】区块链编码|
 |tokenCode|String|【可选】通证编码（比如：jingtum的SWT、moac的MOAC）（为空时，可以查看该钱包下所有账户的余额）|
 - 请求示例图：
@@ -363,9 +363,9 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址walletAddr和userId二选一|
-|userId|String|二选一】用户IdwalletAddr和userId二选一|
-|chainCode|String|区块链编码（目前支持jingtum和moac）|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|二选一】用户Id，walletAddr和userId二选一|
+|chainCode|String|区块链编码|
 |tokenCode|String|通证编码（比如：jingtum的默认通证为SWT)|
 
 - 请求示例图：
@@ -423,8 +423,8 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址:walletAddr和userId二选一|
-|userId|String|【二选一】用户IdwalletAddr和userId二选一|
+|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 - 请求示例图：
 ---
 ![image](./pics/wallet_accounts.jpg?raw=true)

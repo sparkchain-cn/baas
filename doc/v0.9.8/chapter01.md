@@ -27,7 +27,7 @@
 那么在浏览器中则使用[https://dapi.sparkchain.cn/v1/app/init](https://dapi.sparkchain.cn/v1/app/init)即可。 
 
 <font color=Red> 
-注意：如果需要运行在测试公链上，请在设置公链名称时，加上“Test”后缀，比如：公链名称(chainCode)为“jingtum”，那么设置为“jingtumTest”，通证编码（tokenCode）,仍未“SWT”不受影响。
+注意：如果需要运行在测试公链上，请在设置公链名称时，加上“Test”后缀，比如：公链名称(chainCode)为“jingtum”，那么设置为“jingtumTest”，通证编码（tokenCode）,仍为“SWT”不受影响。
 </font>
 
 - 2：返回格式  

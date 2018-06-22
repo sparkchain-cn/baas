@@ -11,7 +11,7 @@
 
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
-|chainCode|String|区块链编码（目前支持jingtum和moac，可选择其中一种）| 
+|chainCode|String|区块链编码| 
 - 请求示例图：
 --- 
 ![image](./pics/account_creatAccount.jpg?raw=true)
@@ -179,7 +179,7 @@
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
 |account|String|账户|
-|chainCode|String|区块链编码（目前支持jingtum和moac，选其一填写）|
+|chainCode|String|区块链编码（比如：jingtum）|
 |tokenCode|String|通证编码（比如：jingtum的通证是SWT）|
 - 请求示例图：
 --- 
