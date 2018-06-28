@@ -27,7 +27,7 @@
 - 请求示例代码：
 --- 
 ```
-/v1/ap/init/appcode=testapp1&appname=testapp1
+/v1/ap/init?appcode=testapp1&appname=testapp1
 ```
 
 - 结果返回参数：  
@@ -81,7 +81,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/access/appid=1009273874782617600&appsecret=55ef31ed-0304-4ecb-b294-e6fc1b098e7c
+/v1/app/access?appid=1009273874782617600&appsecret=55ef31ed-0304-4ecb-b294-e6fc1b098e7c
 ```
 - 结果返回参数： 
  
@@ -131,7 +131,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/createAppWallet/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&chainCodes=moac&onlyWallet=false
+/v1/app/createAppWallet?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&chainCodes=moac&onlyWallet=false
 ```
 
 - 结果返回参数：
@@ -199,7 +199,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/createWallet/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&userId=testapp1_user1&password=123456
+/v1/app/createWallet?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&userId=testapp1_user1&password=123456
 ```
 
 - 结果返回参数：
@@ -260,7 +260,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/selectChain/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&chainCodes=jingtum
+/v1/app/selectChain?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&chainCodes=jingtum
 ```
 
 - 结果返回参数：  
@@ -313,7 +313,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/selectToken/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&chainCode=moac&tokenCodes=TT1
+/v1/app/selectToken?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&chainCode=moac&tokenCodes=TT1
 ```
 
 - 结果返回参数：  
@@ -361,7 +361,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/syncAllWallet/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b
+/v1/app/syncAllWallet?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b
 ```
 - 结果返回参数：  
 
@@ -409,7 +409,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/app/sysMsg/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&msgType=SYNC_ALL_WALLET_SUCESS
+/v1/app/sysMsg?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&msgType=SYNC_ALL_WALLET_SUCESS
 ```
 - 结果返回参数：
 

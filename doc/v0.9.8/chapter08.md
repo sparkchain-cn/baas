@@ -80,7 +80,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 - 请求示例代码：
 ---
 ```
-/v1/sys/createToken/chainCode=moac&name=TT1&code=TT1&account=XXX&precisions=18&currency=TT1&amount=10000000000000&privateKey=XXX
+/v1/sys/createToken?chainCode=moac&name=TT1&code=TT1&account=XXX&precisions=18&currency=TT1&amount=10000000000000&privateKey=XXX
 ```
 
 - 结果返回参数：  
@@ -139,7 +139,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 - 请求示例代码：
 ---
 ```
-/v1/sys/addToken/chainCode=moac&name=TT1&code=TT1&precisions=18&currency=TT1&contractAddr=0xfe885bf0d8c98ae57e5c5bf359f0e35e178ca85c&contractAbi=XXX
+/v1/sys/addToken?chainCode=moac&name=TT1&code=TT1&precisions=18&currency=TT1&contractAddr=0xfe885bf0d8c98ae57e5c5bf359f0e35e178ca85c&contractAbi=XXX
 ```
 
 - 结果返回参数：  
