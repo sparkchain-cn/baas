@@ -36,7 +36,7 @@
 - 请求示例代码：
 ---    
 ```
-/v1/text/record/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&memo=moac_text_record&bizId=f313919a-56e8-49fc-b05b-865bc69056e0&amount=0&gasLimit=40000&gasPrice=20000000000
+/v1/text/record?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&memo=moac_text_record&bizId=f313919a-56e8-49fc-b05b-865bc69056e0&amount=0&gasLimit=40000&gasPrice=20000000000
 ```
 - 结果返回参数：
 
@@ -85,7 +85,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/text/recordInfo/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&tranHash=0x740eb84c76ae1fec215917fda8431765ed5c7fafdf6a1653e7e544959dddaaff
+/v1/text/recordInfo?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&tranHash=0x740eb84c76ae1fec215917fda8431765ed5c7fafdf6a1653e7e544959dddaaff
 ```
 
 - 结果返回参数：  
@@ -158,7 +158,7 @@
 - 请求示例代码：
 ---  
 ```
-/v1/text/recordInfoList/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&pagesize=1
+/v1/text/recordInfoList?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&pagesize=1
 ```
 
 - 结果返回参数： 

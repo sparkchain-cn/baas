@@ -18,7 +18,7 @@
 - 请求示例代码：
 --- 
 ```
-/v1/account/createAccount/chainCode=jingtum
+/v1/account/createAccount?chainCode=jingtum
 ```
 
 - 结果返回参数：  
@@ -80,7 +80,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/account/charge/chainCode=moac&tokenCode=MOAC&srcAccount=XXX&srcPrivateKey=XXX&destWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&bizId=f0cefc3b-b936-4da6-afe1-94ef9014c500&amount=0.001
+/v1/account/charge?chainCode=moac&tokenCode=MOAC&srcAccount=XXX&srcPrivateKey=XXX&destWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&bizId=f0cefc3b-b936-4da6-afe1-94ef9014c500&amount=0.001
 ```
 - 结果返回参数：  
   
@@ -137,7 +137,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/account/transfer/srcAccount=XXX&privateKey=XXX&destAccount=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&amount=0.00001&chainCode=moac&tokenCode=MOAC&bizId=ce876b5b-faad-4fe3-a820-6646ee8cc7ef
+/v1/account/transfer?srcAccount=XXX&privateKey=XXX&destAccount=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&amount=0.00001&chainCode=moac&tokenCode=MOAC&bizId=ce876b5b-faad-4fe3-a820-6646ee8cc7ef
 ```
 
 - 结果返回参数： 
@@ -187,7 +187,7 @@
 - 请求示例代码：
 --- 
 ```
-/v1/account/balance/account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&chainCode=moac&tokenCode=MOAC
+/v1/account/balance?account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&chainCode=moac&tokenCode=MOAC
 ```
 
 - 结果返回参数：  
@@ -244,7 +244,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/account/transInfo/account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&chainCode=moac&tranHash=0xe8f6b9636bcb5bc27f3b86cd81cceb446b180ed8e4ba9224b56e0f9fa6cf2f27
+/v1/account/transInfo?account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&chainCode=moac&tranHash=0xe8f6b9636bcb5bc27f3b86cd81cceb446b180ed8e4ba9224b56e0f9fa6cf2f27
 ```
 
 - 结果返回参数：  
@@ -308,7 +308,7 @@
 - 请求示例代码：
 ---  
 ```
-/v1/account/syncWaterflow/account=jsG1CeTng2HJamTTjQiUsk1Jak9pn228Ey&chainCode=jingtum&tokenCode=SWT
+/v1/account/syncWaterflow?account=jsG1CeTng2HJamTTjQiUsk1Jak9pn228Ey&chainCode=jingtum&tokenCode=SWT
 ```
 - 结果返回参数：
 
@@ -381,7 +381,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/account/transInfoList/account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&pagesize=1&pagenum=1
+/v1/account/transInfoList?account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&pagesize=1&pagenum=1
 ```
 
 - 结果返回参数： 

@@ -34,7 +34,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/bindAccount/accessToken=256e10be-8172-4cfc-ae78-c543d8c38706&walletAddr=074ea814-b202-4469-a6c7-7efe10aa3e9d&chainCode=moac&account=0x11631df10e22410e1ac0d44ebc2aa21811ed645a&accountPrivatekey=a1da976cf6106c52365d463096d144a8ac8567323719e4a512143751579756a1
+/v1/wallet/bindAccount?accessToken=256e10be-8172-4cfc-ae78-c543d8c38706&walletAddr=074ea814-b202-4469-a6c7-7efe10aa3e9d&chainCode=moac&account=0x11631df10e22410e1ac0d44ebc2aa21811ed645a&accountPrivatekey=a1da976cf6106c52365d463096d144a8ac8567323719e4a512143751579756a1
 ```
 
 - 结果返回参数：

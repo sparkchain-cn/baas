@@ -25,7 +25,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/setPayPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&password=1009273874782617600&payPassword=654321
+/v1/wallet/setPayPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&password=1009273874782617600&payPassword=654321
 ```
 
 - 结果返回参数：  
@@ -96,7 +96,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/transfer/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&amount=0.000001&bizId=539482a2-ccff-42bb-9f4e-f212c4a89d94&memo=wallet+transfer+0.000001moac&gasLimit=40000&gasPrice=20000000000
+/v1/wallet/transfer?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&amount=0.000001&bizId=539482a2-ccff-42bb-9f4e-f212c4a89d94&memo=wallet+transfer+0.000001moac&gasLimit=40000&gasPrice=20000000000
 ```
 
 - 结果返回参数：  
@@ -153,7 +153,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/balances/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&chainCode=moac&tokenCode=MOAC
+/v1/wallet/balances?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&chainCode=moac&tokenCode=MOAC
 ```
 - 结果返回参数：
   
@@ -218,7 +218,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/transInfo/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&tranHash=0x33697d81dd4b6cd3190ed9be54ecc7c2d660e4e930b3a50e9d127d3ec42d61b1
+/v1/wallet/transInfo?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&tranHash=0x33697d81dd4b6cd3190ed9be54ecc7c2d660e4e930b3a50e9d127d3ec42d61b1
 ```
 - 结果返回参数：
 
@@ -288,7 +288,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/transInfoList/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9
+/v1/wallet/transInfoList?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9
 ```
 
 - 结果返回参数：  
@@ -375,7 +375,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/syncBalance/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&chainCode=moac&tokenCode=MOAC
+/v1/wallet/syncBalance?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&chainCode=moac&tokenCode=MOAC
 ```
 - 结果返回参数：  
 
@@ -432,7 +432,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/accounts/accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9
+/v1/wallet/accounts?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9
 ```
 
 - 结果返回参数：  
@@ -497,7 +497,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/privatekey/accessToken=502d3a8a-5d4b-43b3-b4a5-81892cbddd6c&walletAddr=99fcb5c8-ef0c-4ce2-bcbd-de45bf4cda8f&payPassword=654321&chainCode=jingtum
+/v1/wallet/privatekey?accessToken=502d3a8a-5d4b-43b3-b4a5-81892cbddd6c&walletAddr=99fcb5c8-ef0c-4ce2-bcbd-de45bf4cda8f&payPassword=654321&chainCode=jingtum
 ```
 
 - 结果返回参数：  

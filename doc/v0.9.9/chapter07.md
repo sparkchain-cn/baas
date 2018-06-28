@@ -23,7 +23,7 @@
 - 请求示例代码：
 ---  
 ```
-/v1/wallet/modifyPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&oldPassword=1009273874782617600&newPassword=123456
+/v1/wallet/modifyPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&oldPassword=1009273874782617600&newPassword=123456
 ```
 - 结果返回参数：
 
@@ -79,7 +79,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/resetPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe
+/v1/wallet/resetPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe
 ```
 
 - 结果返回参数：  
@@ -137,7 +137,7 @@
 - 请求示例代码：
 ---  
 ```
-/v1/wallet/validPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&password=123456
+/v1/wallet/validPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&password=123456
 ```
 
 - 结果返回参数：  
@@ -195,7 +195,7 @@
 - 请求示例代码：
 ---  
 ```
-/v1/wallet/updatePayPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&oldPayPassword=1009321244299886592&newPayPassword=654321
+/v1/wallet/updatePayPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&oldPayPassword=1009321244299886592&newPayPassword=654321
 ```
 
 - 结果返回参数：
@@ -251,7 +251,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/resetPayPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe
+/v1/wallet/resetPayPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe
 ```
 
 - 结果返回参数：  
@@ -309,7 +309,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/validPayPassword/accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321
+/v1/wallet/validPayPassword?accessToken=1e43fe43-bf65-4180-8242-fbf4a30dd29b&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321
 ```
 
 - 结果返回参数： 
