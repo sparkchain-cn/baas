@@ -126,7 +126,7 @@
 |amount|String|支付金额|
 |chainCode|String|区块链编码|
 |tokenCode|String|通证编码|
-|memo|String|【可选】记录内容|
+|memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
 |gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
 |gasPrice|Long|【可选】Gas计费单位，,该gas设置对jingtum公链不起效|  

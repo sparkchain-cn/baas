@@ -23,7 +23,7 @@
 |destWalletAddr|String|【三选一】接受方的钱包地址（destWalletAddr、destUserId、destAccount）|
 |destUserId|String|【三选一】接受方的用户Id（destWalletAddr、destUserId、destAccount|
 |destAccount|String|【三选一】接受方的账户（destWalletAddr、destUserId、destAccount）|
-|memo|String|记录内容|
+|memo|String|记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
 |amount|String|【可选】金额，执行该接口时，花费的金额，比如：jingtum在文本添加时，不填写该值，会花费1SWT|
 |gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|

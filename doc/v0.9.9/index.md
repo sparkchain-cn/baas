@@ -14,9 +14,9 @@
 <a href="./chapter02.md#2. 接入系统接口">2. 接入系统接口</a>  <br>
 <a href="./chapter02.md#2.1. 接入系统初始化">2.1. 接入系统初始化</a>  <br>
 <a href="./chapter02.md#2.2. 生成访问凭证">2.2. 生成访问凭证</a>  <br>
-<a href="./chapter02.md#2.3. 创建企业钱包">2.3. 创建企业钱包</a>  <br>
-<a href="./chapter02.md#2.4. 创建用户钱包">2.4. 创建用户钱包</a>  <br>
-<a href="./chapter02.md#2.5. 选择区块链">2.5. 选择区块链</a>  <br>
+<a href="./chapter02.md#2.3. 选择区块链">2.3. 选择区块链</a>  <br>
+<a href="./chapter02.md#2.4. 创建企业钱包">2.4. 创建企业钱包</a>  <br>
+<a href="./chapter02.md#2.5. 创建用户钱包">2.5. 创建用户钱包</a>  <br>
 <a href="./chapter02.md#2.6. 选择通证">2.6. 选择通证</a>  <br>
 <a href="./chapter02.md#2.7. 同步所有钱包">2.7. 同步所有钱包</a><br>
 <a href="./chapter02.md#2.8. 获取系统消息[可选]">2.8. 获取系统消息[可选]</a><br>
@@ -30,7 +30,7 @@
 <a href="./chapter03.md#3.6. 钱包余额同步">3.6. 钱包余额同步</a>  <br>
 <a href="./chapter03.md#3.7. 获取钱包账户的信息">3.7. 获取钱包账户的信息</a> <br>
 <a href="./chapter03.md#3.8. 获取钱包账户的私钥">3.8. 获取钱包账户的私钥(新加)</a> <br>
- <a href="./chapter04.md#4. 用户账户接口">4. 用户账户接口</a>  <br> 
+<a href="./chapter04.md#4. 用户账户接口">4. 用户账户接口</a>  <br> 
 <a href="./chapter04.md#4.1. 创建账户">4.1. 创建账户</a>  <br>
 <a href="./chapter04.md#4.2. 账户充值">4.2. 账户充值</a>  <br>
 <a href="./chapter04.md#4.3. 账户的支付请求">4.3. 账户的支付请求</a>  <br>
@@ -39,8 +39,6 @@
 <a href="./chapter05.md#5. 用户钱包账户关联接口">5. 获取账户支付历史</a>  <br>
 <a href="./chapter05.md#5.1. 绑定单个账户">5.1. 绑定单个账户</a>  <br> 
 <a href="./chapter05.md#5.2. 绑定多个账户">5.2. 绑定多个账户</a>  <br> 
-<a href="./chapter05.md#5.3. 关联单个账户">5.3. 关联单个账户</a>  <br> 
-<a href="./chapter05.md#5.4. 关联多个账户">5.4. 关联多个账户</a>  <br>
 <a href="./chapter06.md#6. 文本上链接口">6. 文本上链接口</a>  <br>
 <a href="./chapter06.md#6.1. 文本上链">6.1. 文本上链</a>  <br>
 <a href="./chapter06.md#6.2. 查询文本内容">6.2. 查询文本内容</a>  <br>

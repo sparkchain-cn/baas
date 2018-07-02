@@ -84,7 +84,7 @@
 |destAccount|String|【三选一】接受方的账户（destWalletAddr、destUserId和destAccount）|
 |amount|String|支付金额|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
-|memo|String|【可选】记录内容|
+|memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
 |gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
 |gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
 
