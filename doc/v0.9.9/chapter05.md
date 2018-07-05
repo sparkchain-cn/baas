@@ -1,4 +1,8 @@
-<a href="./index.md#top">返回目录</a>  <br>
+<a href="./index.md#top">----返回主目录----</a>  <br>
+<a href="./chapter05.md#5. 用户钱包账户关联接口">5. 获取账户支付历史</a>  <br>
+<a href="./chapter05.md#5.1. 绑定单个账户">5.1. 绑定单个账户</a>  <br> 
+<a href="./chapter05.md#5.2. 绑定多个账户">5.2. 绑定多个账户</a>  <br> 
+
 ### <a name="5. 用户钱包账户关联接口">5. 获取账户支付历史</a>  
 对于已经有的用户钱包，如果需要和账户的进行关联，或者把账户绑定到指定钱包中，可以调用这些接口进行处理
 
@@ -158,5 +162,5 @@ accounts:[{chainCode:"moac",account:"0x194a45117c23bb2adca4ee51b7df3c12a2804c47"
 
  ![QQ群：805362142](../nc.png)
 
-<a href="./index.md#top">返回目录</a>  <br>
+<a href="./index.md#top">返回主目录</a>  <br>
 

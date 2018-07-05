@@ -1,4 +1,9 @@
-<a href="./index.md#top">返回目录</a>  <br>
+<a href="./index.md#top">----返回主目录----</a>  <br>
+<a href="./chapter08.md#8. 系统管理接口">8. 系统管理接口</a>  <br>
+<a href="./chapter08.md#8.1. 注册区块链[可选，待实现]">8.1. 注册区块链[可选，待实现]</a>  <br>
+<a href="./chapter08.md#8.2. 新增通证[可选]">8.2. 新增通证[可选]</a>  <br>
+<a href="./chapter08.md#8.3. 添加通证[可选，待实现]">8.3. 添加通证[可选，待实现]</a>  <br>
+
 ### <a name="8. 系统管理接口">8. 系统管理接口</a>   
 
 
@@ -192,4 +197,4 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 
  ![QQ群：805362142](../nc.png)
 
-<a href="./index.md#top">返回目录</a>  <br>
+<a href="./index.md#top">返回主目录</a>  <br>

@@ -1,4 +1,4 @@
-<a href="./index.md#top">返回目录</a>  <br>
+
 ---
 - 附1：AccessToken获取简单示例  
 
@@ -122,4 +122,3 @@ public class SparkChainBaasUtils {
 
  ![QQ群：805362142](../nc.png)
 
-<a href="./index.md#top">返回目录</a>  <br>

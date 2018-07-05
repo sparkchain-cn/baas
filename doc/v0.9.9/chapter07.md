@@ -1,4 +1,11 @@
-<a href="./index.md#top">返回目录</a>  <br>
+<a href="./index.md#top">----返回主目录----</a>  <br>
+<a href="./chapter07.md#7. 用户钱包密码接口">7. 用户钱包密码接口</a>  <br>
+<a href="./chapter07.md#7.1 修改查询密码">7.1 修改查询密码</a>  <br>
+<a href="./chapter07.md#7.2. 重置查询密码">7.2. 重置查询密码</a>  <br>
+<a href="./chapter07.md#7.3. 验证查询密码">7.3. 验证查询密码</a>  <br>
+<a href="./chapter07.md#7.4. 修改支付密码">7.4. 修改支付密码</a>  <br>
+<a href="./chapter07.md#7.5. 重置支付密码">7.5. 重置支付密码</a>  <br>
+<a href="./chapter07.md#7.6. 验证支付密码">7.6. 验证支付密码</a>  <br>
 ## <a name="7. 用户钱包密码接口">7. 用户钱包密码接口</a>  
 ### <a name="7.1 修改查询密码">7.1 修改查询密码</a>   
 通过该接口，可以修改钱包的查询密码。  
@@ -369,4 +376,4 @@
 
  ![QQ群：805362142](../nc.png)
 
-<a href="./index.md#top">返回目录</a>  <br>
+<a href="./index.md#top">返回主目录</a>  <br>
