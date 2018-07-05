@@ -1,3 +1,5 @@
+<a href="./index.md#top">返回目录</a>  <br>
+
 ## <a name="3. 用户钱包操作接口">3. 用户钱包操作接口</a>   
 
 接入业务系统上链的基本操作就是业务系统中用户进行转账等基本的操作，这些操作在发生在用户钱包之间。用户钱包操作接口主要对于用户之间的转账进行管理，以及对于转账之后的余额或交易流水进行查询。
@@ -125,6 +127,182 @@
 }
 ```
 
+#### <a name="3.2.1 钱包的支付请求（钱包之间的转账）">3.2.1 钱包的支付请求（钱包之间的转账）</a> 
+使用钱包地址作为入参，进行钱包之间的转账。
+
+- 接口地址：/v1/wallet/transfer  
+
+- 请求方式：GET/POST  
+
+- 接口参数：  
+
+| 参数         | 类型       | 说明   |
+| :------------- |:-------------| :-----|
+|accessToken|String|访问凭证|
+|srcWalletAddr|String|支付方的钱包地址|
+|payPassword|String|支付方的支付密码|
+|chainCode|String|区块链编码（比如：jingtum或moac）|
+|tokenCode|String|通证编码(比如：jingtum的SWT、moac的MOAC)|
+|destWalletAddr|String|接受方的钱包地址|
+|amount|String|支付金额|
+|bizId|String|业务Id（每次操作都不能重复，保证事务）|
+|memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
+|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+
+- 请求示例图：
+---  
+![image](./pics/wallet_transfer.jpg?raw=true)
+
+- 请求示例代码：
+---
+```
+/v1/wallet/transfer?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&amount=0.000001&bizId=539482a2-ccff-42bb-9f4e-f212c4a89d94&memo=wallet+transfer+0.000001moac&gasLimit=40000&gasPrice=20000000000
+```
+
+- 结果返回参数：  
+
+| 参数         | 类型       | 说明   |
+| :------------- |:-------------| :-----|
+|code|String|请求结果|
+|message|String|返回信息|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|data|Object|返回数据|
+|data.hash|String|交易返回的hash值|
+- 返回示例图：  
+---
+![image](./pics/wallet_transfer_result.jpg?raw=true)
+
+- 返回示例代码：
+---
+```
+{
+    "code": "200",
+    "data": {
+        "hash": "0x33697d81dd4b6cd3190ed9be54ecc7c2d660e4e930b3a50e9d127d3ec42d61b1"
+    },
+    "message": "",
+    "success": true
+}
+```
+
+#### <a name="3.2.2 钱包的支付请求（钱包用户之间的转账）">3.2.2 钱包的支付请求（钱包用户之间的转账）</a> 
+使用钱包用户名作为入参，进行钱包之间的转账。
+
+- 接口地址：/v1/wallet/transfer
+
+- 请求方式：GET/POST  
+
+- 接口参数：  
+
+| 参数         | 类型       | 说明   |
+| :------------- |:-------------| :-----|
+|accessToken|String|访问凭证|
+|srcUserId|String|支付方的用户Id|
+|payPassword|String|支付方的支付密码|
+|chainCode|String|区块链编码（比如：jingtum或moac）|
+|tokenCode|String|通证编码(比如：jingtum的SWT、moac的MOAC)|
+|destUserId|String|接受方的用户Id|
+|amount|String|支付金额|
+|bizId|String|业务Id（每次操作都不能重复，保证事务）|
+|memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
+|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+
+- 请求示例图：
+---  
+![image](./pics/wallet_transfer.jpg?raw=true)
+
+- 请求示例代码：
+---
+```
+/v1/wallet/transfer?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&amount=0.000001&bizId=539482a2-ccff-42bb-9f4e-f212c4a89d94&memo=wallet+transfer+0.000001moac&gasLimit=40000&gasPrice=20000000000
+```
+
+- 结果返回参数：  
+
+| 参数         | 类型       | 说明   |
+| :------------- |:-------------| :-----|
+|code|String|请求结果|
+|message|String|返回信息|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|data|Object|返回数据|
+|data.hash|String|交易返回的hash值|
+- 返回示例图：  
+---
+![image](./pics/wallet_transfer_result.jpg?raw=true)
+
+- 返回示例代码：
+---
+```
+{
+    "code": "200",
+    "data": {
+        "hash": "0x33697d81dd4b6cd3190ed9be54ecc7c2d660e4e930b3a50e9d127d3ec42d61b1"
+    },
+    "message": "",
+    "success": true
+}
+```
+
+#### <a name="3.2.3 钱包的支付请求（钱包向外部账户转账）">3.2.3 钱包的支付请求（钱包向外部账户转账）</a> 
+钱包需要向外部账户转账时，该接口中提供了接收方的“账户”入参。
+
+- 接口地址：/v1/wallet/transfer
+
+- 请求方式：GET/POST  
+
+- 接口参数：  
+
+| 参数         | 类型       | 说明   |
+| :------------- |:-------------| :-----|
+|accessToken|String|访问凭证|
+|srcWalletAddr|String|支付方的钱包地址|
+|payPassword|String|支付方的支付密码|
+|chainCode|String|区块链编码（比如：jingtum或moac）|
+|tokenCode|String|通证编码(比如：jingtum的SWT、moac的MOAC)|
+|destAccount|String|接受方的账户|
+|amount|String|支付金额|
+|bizId|String|业务Id（每次操作都不能重复，保证事务）|
+|memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
+|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+
+- 请求示例图：
+---  
+![image](./pics/wallet_transfer.jpg?raw=true)
+
+- 请求示例代码：
+---
+```
+/v1/wallet/transfer?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&srcWalletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&payPassword=654321&chainCode=moac&tokenCode=MOAC&destWalletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9&amount=0.000001&bizId=539482a2-ccff-42bb-9f4e-f212c4a89d94&memo=wallet+transfer+0.000001moac&gasLimit=40000&gasPrice=20000000000
+```
+
+- 结果返回参数：  
+
+| 参数         | 类型       | 说明   |
+| :------------- |:-------------| :-----|
+|code|String|请求结果|
+|message|String|返回信息|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|data|Object|返回数据|
+|data.hash|String|交易返回的hash值|
+- 返回示例图：  
+---
+![image](./pics/wallet_transfer_result.jpg?raw=true)
+
+- 返回示例代码：
+---
+```
+{
+    "code": "200",
+    "data": {
+        "hash": "0x33697d81dd4b6cd3190ed9be54ecc7c2d660e4e930b3a50e9d127d3ec42d61b1"
+    },
+    "message": "",
+    "success": true
+}
+```
 
 ### <a name="3.3. 获取钱包余额">3.3. 获取钱包余额</a>  
 支付完成之后，通过该接口获取用户钱包中各账户的余额。
@@ -554,3 +732,4 @@
 
  ![QQ群：805362142](../nc.png)
 
+<a href="./index.md#top">返回目录</a>  <br>
