@@ -61,7 +61,7 @@
 <a href="./chapter08.md#8.1. 注册区块链[可选，待实现]">8.1. 注册区块链[可选，待实现]</a>  <br>
 <a href="./chapter08.md#8.2. 新增通证[可选]">8.2. 新增通证[可选]</a>  <br>
 <a href="./chapter08.md#8.3. 添加通证[可选，待实现]">8.3. 添加通证[可选，待实现]</a>  <br>
-<a href="./chapter09.md">AccessToken获取简单示例  </a> <br>
+<a href="./chapter09.md">9. AccessToken获取简单示例  </a> <br>
 
 
 
