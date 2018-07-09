@@ -1,8 +1,9 @@
-<a href="./index.md#top">----返回主目录----</a>  <br>
+目录
+===========================
 <a href="./chapter08.md#8. 系统管理接口">8. 系统管理接口</a>  <br>
-<a href="./chapter08.md#8.1. 注册区块链[可选，待实现]">8.1. 注册区块链[可选，待实现]</a>  <br>
-<a href="./chapter08.md#8.2. 新增通证[可选]">8.2. 新增通证[可选]</a>  <br>
-<a href="./chapter08.md#8.3. 添加通证[可选，待实现]">8.3. 添加通证[可选，待实现]</a>  <br>
+* <a href="./chapter08.md#8.1. 注册区块链[可选，待实现]">8.1. 注册区块链[可选，待实现]</a>  <br>
+* <a href="./chapter08.md#8.2. 新增通证[可选]">8.2. 新增通证[可选]</a>  <br>
+* <a href="./chapter08.md#8.3. 添加通证[可选，待实现]">8.3. 添加通证[可选，待实现]</a>  <br>
 
 ### <a name="8. 系统管理接口">8. 系统管理接口</a>   
 
@@ -19,6 +20,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 
 
 ### <a name="8.1. 注册区块链[待实现]">8.1. 注册区块链[待实现]</a>  
+[回到顶部](#目录)
 
 如果下载了docker镜像，其默认初始化moac和jingtum链，可以在本地的环境中注册其它区域链，当然需要实现其相关的接口  
 
@@ -58,7 +60,9 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 
 - 返回示例：  
 
-### <a name="8.2. 新增通证">8.2. 新增通证</a>   
+### <a name="8.2. 新增通证">8.2. 新增通证</a>  
+[回到顶部](#目录)
+
   在某区块链上，创建非原生的通证，该接口目前可支持moac的Erc20通证的新增，不支持Jingtum。  
 
 - 接口地址：/v1/sys/createToken  
@@ -104,7 +108,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 
 - 返回示例代码：  
 ---
-```
+```json
 {
     "code": "200",
     "data": {
@@ -116,6 +120,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 ```
 
 ### <a name="8.3. 添加通证">8.3. 添加通证</a>  
+[回到顶部](#目录)
  
 添加区块链上已存在的通证到本地平台，目前只支持添加moac的Erc20通证。
 
@@ -163,7 +168,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 
 - 返回示例代码：
 --- 
-```
+```json
 {
     "code": "200",
     "data": null,
