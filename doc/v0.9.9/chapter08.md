@@ -73,7 +73,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 
 | 参数         | 类型       | 说明   |
 | :------------- |:-------------| :-----|
-|String|String|chainCode|
+|chainCode|String|区块链编码|
 |name|String|通证名称|
 |code|String|通证编码|
 |account|String|发行方（账户地址）|
