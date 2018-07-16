@@ -92,6 +92,9 @@
 |destUserId|String|【三选一】接受方的用户Id|
 |bizId|String|业务ID（每次操作都不能重复，保证事务）|
 |amount|String|充值金额|  
+|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas计费单位，,该gas设置对jingtum公链不起效|  
+
 - 请求示例图：
 ---
 ![image](./pics/account_charge.jpg?raw=true)

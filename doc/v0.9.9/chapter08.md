@@ -66,8 +66,8 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 ### <a name="8.2. 新增通证">8.2. 新增通证</a>  
 [回到顶部](#目录)
 
-  在某区块链上，创建非原生的通证，该接口目前可支持moac的Erc20通证的新增，不支持Jingtum。  
-
+  在某区块链上，创建非原生的通证，该接口目前可支持moac/eth的Erc20通证的新增，不支持Jingtum。  
+  
 - 接口地址：/v1/sys/createToken  
 
 - 请求方式：GET/POST  
@@ -125,7 +125,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 ### <a name="8.3. 添加通证">8.3. 添加通证</a>  
 [回到顶部](#目录)
  
-添加区块链上已存在的通证到本地平台，目前只支持添加moac的Erc20通证。
+添加区块链上已存在的通证到本地平台，目前只支持添加moac/eth的Erc20通证。
 
 - 接口地址：/v1/sys/addToken  
 
