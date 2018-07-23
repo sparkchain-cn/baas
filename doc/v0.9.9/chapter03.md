@@ -442,6 +442,7 @@
 |data.gasFee|String|Gas费用|
 |data.chainCode|String|区块链编码|
 |data.memos|String|记录内容|
+|data.blockNumber|String|区块号（仅当入参forceRefresh为true时，可以获取已写入区块的区块号）|
 |data.destAccount|String|接受方的账户|
 |data.srcAccount|String|支付方的账户|
 |data.tranHash|String|交易的hash值|

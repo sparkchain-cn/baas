@@ -47,7 +47,6 @@
 |success|boolean|是否成功（true：成功）|
 |data|Object|返回数据|
 |data.privateKey|String|账户的私钥|
-|data.publicKey|String|账户的公钥|
 |data.addr|String|账户地址|
 
 - 返回示例图：
@@ -224,10 +223,10 @@
 |message|String|返回信息|
 |success|boolean|是否成功（true：成功）|
 |data|Object|返回数据|
-|address|String|账户地址|
-|balance|String|余额|
-|tokenCode|String|通证编码|
-|freezed|String|冻结金额|
+|data.address|String|账户地址|
+|data.balance|String|余额|
+|data.tokenCode|String|通证编码|
+|data.freezed|String|冻结金额|
 
 - 返回示例图：
 --- 
@@ -272,7 +271,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/account/transInfo?account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&chainCode=moac&tranHash=0xe8f6b9636bcb5bc27f3b86cd81cceb446b180ed8e4ba9224b56e0f9fa6cf2f27
+account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86B904669A6C3F913CD5B386EE9A3A9F732D2086337EF5404AC24A0A
 ```
 
 - 结果返回参数：  
@@ -288,6 +287,8 @@
 |data.gasFee|String|交易费用|
 |data.amount|String|支付金额|
 |data.memos|String|记录内容|
+|data.blockNumber|String|区块编号（交易记录一旦写入区块后才返回该字段）|
+|data.state|String|状态（-1：交易失败 1:等待 9：交易成功）|
 |data.tranHash|String|交易的hash|
 |data.destAccount|String|接受方的账户|
 |data.srcAccount|String|支付方的账户|
@@ -301,14 +302,16 @@
 {
     "code": "200",
     "data": {
-        "tradeTime": "1529479081",
-        "tokenCode": null,
-        "gasFee": "2.5E13",
-        "amount": null,
-        "memos": "",
-        "destAccount": "0x08bad40508a3169a3a2e9caa36fa20ef7bd98535",
-        "tranHash": "0xe8f6b9636bcb5bc27f3b86cd81cceb446b180ed8e4ba9224b56e0f9fa6cf2f27",
-        "srcAccount": "0x32d012e43fdc978260cee98f5f6899a6cb18a148"
+        "tradeTime": 1532072250000,
+        "tokenCode": "SWT",
+        "gasFee": "0.01",
+        "amount": "0.2",
+        "memos": "accout transfer 0.2swt",
+        "blockNumber": "10222917",
+        "destAccount": "jEWtMWS6FBXyj1U1c4X8u5VnFpZtZ3rUMZ",
+        "state": "9",
+        "tranHash": "D56E173D86B904669A6C3F913CD5B386EE9A3A9F732D2086337EF5404AC24A0A",
+        "srcAccount": "jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa"
     },
     "message": "",
     "success": true

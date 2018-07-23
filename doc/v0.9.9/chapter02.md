@@ -211,6 +211,7 @@
 |data|Object|返回数据|
 |data.walletAddr|String|钱包地址,通过该地址可以找到账户|
 |data.userId|String|用户Id|
+|data.walletAddr|String|钱包地址|
 |data.password|String|查询密码|
 |data.accounts|list|账户列表|
 |data.accounts.chainCode|String |区块链的编码|
@@ -292,6 +293,7 @@
 |data|Object|返回数据|
 |data.appId|String|应用Id|
 |data.userId|String|用户Id|
+|data.walletAddr|String|钱包地址|
 |data.accounts|list|账户列表|
 |data.accounts.chainCode|String|区块链编码|
 |data.accounts.account|String|账户|  
