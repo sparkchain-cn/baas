@@ -360,7 +360,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/balances?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&chainCode=moac&tokenCode=MOAC
+/v1/wallet/balances?accessToken=480b668b-fde4-498a-8235-366c11d061b5&walletAddr=ea8ad52c-9bc4-45e6-b766-f7cb2dd0b65e&chainCode=jingtumTest&tokenCode=SWT
 ```
 - 结果返回参数：
   
@@ -374,6 +374,7 @@
 |data.userId|String|用户Id|
 |data.balances|list|余额数据|
 |data.balances.tokenCode|String|通证编码|
+|data.balances.address|String|账户地址|
 |data.balances.balance|String|余额|
 |data.balances.chainCode|String|区块链编码|
 |data.balances.freezed|String|冻结的金额|
@@ -389,14 +390,15 @@
     "data": {
         "balances": [
             {
-                "tokenCode": "MOAC",
-                "balance": "0.00095092",
-                "chainCode": "moac",
-                "freezed": "0"
+                "tokenCode": "SWT",
+                "address": "jUKvKhfriUQABjMhkAB4EwcSziUXcmdfL9",
+                "balance": "34.9897",
+                "chainCode": "jingtumTest",
+                "freezed": "20"
             }
         ],
-        "walletAddr": "4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe",
-        "userId": "1009273874782617600"
+        "walletAddr": "ea8ad52c-9bc4-45e6-b766-f7cb2dd0b65e",
+        "userId": "1026998220116459520"
     },
     "message": "",
     "success": true
@@ -499,7 +501,7 @@
 - 请求示例代码：
 ---
 ```
-/v1/wallet/transInfoList?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4402fa2f-0f42-4fde-a736-5727d618b4c9
+/v1/wallet/transInfoList?accessToken=337594a7-6e96-4dc4-97cd-5dc6ff949000&accounts=jfhEuQiJ5f8y8F8hR57JVUnXxYavn9FM3h
 ```
 
 - 结果返回参数：  
@@ -520,6 +522,7 @@
 |data.results.gasFee|Double|交易费用|
 |data.results.chainCode|String|区块链编码|
 |data.results.memos|String|记录内容|
+|data.results.bizId|String|业务Id|
 |data.results.destAccount|String|接受方的账户|
 |data.results.state|Integer|状态（-1：失败；0：初始；1：等待；8：同步成功；9：成功）|
 |data.results.srcAccount|String|发起方的账户|
@@ -540,16 +543,17 @@
         "pageNum": 1,
         "results": [
             {
-                "tokenCode": "MOAC",
-                "tradeTime": 1529487709000,
-                "amount": "0.000001",
-                "gasFee": 0.0000726,
-                "chainCode": "moac",
-                "memos": "wallet transfer 0.000001moac",
-                "destAccount": "0x9430e338712f4c1026ab181ef01409a06ab73eb7",
+                "tokenCode": "SWT",
+                "tradeTime": 1532861464000,
+                "amount": "35",
+                "gasFee": "0.01",
+                "chainCode": "jingtum",
+                "memos": "SWT INIT",
+                "bizId": "1532861464298",
+                "destAccount": "jfhEuQiJ5f8y8F8hR57JVUnXxYavn9FM3h",
                 "state": 9,
-                "tranHash": "0x33697d81dd4b6cd3190ed9be54ecc7c2d660e4e930b3a50e9d127d3ec42d61b1",
-                "srcAccount": "0x08bad40508a3169a3a2e9caa36fa20ef7bd98535"
+                "tranHash": "EB7658318F2D3DC3D94A3F32F92945AC204523FDB8FCBF4EC9264E72CE22305B",
+                "srcAccount": "jB4MR8wQAbSECLtTXnaerFEoYvE7qvHNrh"
             }
         ]
     },

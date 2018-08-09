@@ -175,7 +175,7 @@
 - 请求示例代码：
 ---  
 ```
-/v1/text/recordInfoList?accessToken=a7aff191-427a-4275-bf0a-f6f150b486a1&walletAddr=4ed93afd-47bf-43cb-8fd9-ed8ed3c7affe&pagesize=1
+/v1/text/recordInfoList?accessToken=337594a7-6e96-4dc4-97cd-5dc6ff949000&accounts=jfhEuQiJ5f8y8F8hR57JVUnXxYavn9FM3h
 ```
 
 - 结果返回参数： 
@@ -196,6 +196,7 @@
 |data.results.gasFee|String|交易费用|
 |data.results.chainCode|String|区块链编码|
 |data.results.memos|String|记录内容|
+|data.results.bizId|String|业务Id|
 |data.results.destAccount|String|接受方的账户|
 |data.results.state|Integer|状态（-1：失败；0：初始；1：等待；8：同步成功；9：成功|
 |data.results.srcAccount|String|发起方的账户|
@@ -211,21 +212,22 @@
 {
     "code": "200",
     "data": {
-        "total": 4,
-        "pageSize": 1,
+        "total": 1,
+        "pageSize": 10,
         "pageNum": 1,
         "results": [
             {
-                "tokenCode": "MOAC",
-                "tradeTime": 1529490361000,
-                "amount": "0",
-                "gasFee": 0.0000522,
-                "chainCode": "moac",
-                "memos": "moac_text_record",
-                "destAccount": "0x9430e338712f4c1026ab181ef01409a06ab73eb7",
+                "tokenCode": "SWT",
+                "tradeTime": 1532861464000,
+                "amount": "35",
+                "gasFee": "0.01",
+                "chainCode": "jingtum",
+                "memos": "SWT INIT",
+                "bizId": "1532861464298",
+                "destAccount": "jfhEuQiJ5f8y8F8hR57JVUnXxYavn9FM3h",
                 "state": 9,
-                "tranHash": "0x740eb84c76ae1fec215917fda8431765ed5c7fafdf6a1653e7e544959dddaaff",
-                "srcAccount": "0x08bad40508a3169a3a2e9caa36fa20ef7bd98535"
+                "tranHash": "EB7658318F2D3DC3D94A3F32F92945AC204523FDB8FCBF4EC9264E72CE22305B",
+                "srcAccount": "jB4MR8wQAbSECLtTXnaerFEoYvE7qvHNrh"
             }
         ]
     },

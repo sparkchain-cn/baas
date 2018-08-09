@@ -416,7 +416,7 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 - 请求示例代码：
 ---
 ```
-/v1/account/transInfoList?account=0x08bad40508a3169a3a2e9caa36fa20ef7bd98535&pagesize=1&pagenum=1
+/v1/account/transInfoList?account=jfhEuQiJ5f8y8F8hR57JVUnXxYavn9FM3h
 ```
 
 - 结果返回参数： 
@@ -437,6 +437,7 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 |data.results.gasFee|String|交易费用|
 |data.results.chainCode|String|区块链编码|
 |data.results.memos|String|记录内容|
+|data.results.bizId|String|业务Id|
 |data.results.destAccount|String|接受方的账户|
 |data.results.state|String|状态（-1：失败；0：初始；1：等待；8：同步成功；9：成功）|
 |data.results.srcAccount|String|支付方的账户|
@@ -452,21 +453,22 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 {
     "code": "200",
     "data": {
-        "total": 2,
-        "pageSize": 1,
+        "total": 1,
+        "pageSize": 10,
         "pageNum": 1,
         "results": [
             {
-                "tokenCode": "MOAC",
-                "tradeTime": 1529478425000,
-                "amount": "0.00001",
-                "gasFee": 0.000025,
-                "chainCode": "moac",
-                "memos": null,
-                "destAccount": "0x08bad40508a3169a3a2e9caa36fa20ef7bd98535",
+                "tokenCode": "SWT",
+                "tradeTime": 1532861464000,
+                "amount": "35",
+                "gasFee": "0.01",
+                "chainCode": "jingtum",
+                "memos": "SWT INIT",
+                "bizId": "1532861464298",
+                "destAccount": "jfhEuQiJ5f8y8F8hR57JVUnXxYavn9FM3h",
                 "state": 9,
-                "tranHash": "0xe8f6b9636bcb5bc27f3b86cd81cceb446b180ed8e4ba9224b56e0f9fa6cf2f27",
-                "srcAccount": "0x32d012e43fdc978260cee98f5f6899a6cb18a148"
+                "tranHash": "EB7658318F2D3DC3D94A3F32F92945AC204523FDB8FCBF4EC9264E72CE22305B",
+                "srcAccount": "jB4MR8wQAbSECLtTXnaerFEoYvE7qvHNrh"
             }
         ]
     },
