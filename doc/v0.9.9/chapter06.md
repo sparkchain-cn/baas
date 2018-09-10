@@ -118,6 +118,7 @@
 |data.memos|String|记录内容|
 |data.blockNumber|String|区块号（仅当入参forceRefresh为true时，可以获取已写入区块的区块号）|
 |data.destAccount|String|接受方的账户|
+|data.state|Integer|状态（-1：失败；0：初始；1：等待；8：同步成功；9：成功）|
 |data.srcAccount|String|发起方的账户|
 |data.tranHash|String|交易的hash|
 

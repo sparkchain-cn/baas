@@ -288,7 +288,7 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 |data.amount|String|支付金额|
 |data.memos|String|记录内容|
 |data.blockNumber|String|区块编号（交易记录一旦写入区块后才返回该字段）|
-|data.state|String|状态（-1：交易失败 1:等待 9：交易成功）|
+|data.state|String|状态（-1：失败；0：初始；1：等待；8：同步成功；9：成功）||
 |data.tranHash|String|交易的hash|
 |data.destAccount|String|接受方的账户|
 |data.srcAccount|String|支付方的账户|
