@@ -420,7 +420,7 @@
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
 |tranHash|String|交易hash|
-|forceRefresh|boolean|【可选】强制刷新（默认为false，当为true时，会获取链上数据）|
+|forceRefresh|boolean|【可选】强制刷新（默认为false，当为false时，获取火花缓存的交易记录，当为true时，直接从链上获取交易记录）|
 - 请求示例图：
 ---
 ![image](./pics/wallet_transInfo.jpg?raw=true)
@@ -442,7 +442,7 @@
 |data.tradeTime|Date|交易时间|
 |data.amount|String|交易金额|
 |data.gasFee|String|Gas费用|
-|data.chainCode|String|区块链编码|
+|data.chainCode|String|区块链编码（仅当入参forceRefresh为false时，才返回chainCode）|
 |data.memos|String|记录内容|
 |data.blockNumber|String|区块号（仅当入参forceRefresh为true时，可以获取已写入区块的区块号）|
 |data.destAccount|String|接受方的账户|
