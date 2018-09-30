@@ -125,7 +125,9 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 ### <a name="8.3. 添加通证">8.3. 添加通证</a>  
 [回到顶部](#目录)
  
-添加区块链上已存在的通证到本地平台，目前只支持添加moac/eth的Erc20通证。
+添加区块链上已存在的通证（非原生）到火花平台，目前已支持添加moac/eth的Erc20通证和jingtum的通。
+
+执行该接口后，需要执行“2.6. 选择通证”接口和“2.7. 同步所有钱包”，让已接入火花平台的应用能在业务中使用该通证。
 
 - 接口地址：/v1/sys/addToken  
 
@@ -138,11 +140,11 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 |chainCode|String|区块链编码|
 |name|String|通证名称|
 |code|String|通证编码|
-|issuer|String|发行方（账户地址）(可选)|
+|issuer|String|发行方（账户地址）(可选) 注意：添加jingtum的通时，必须设置该字段|
 |precisions|String|通证精度|
 |currency|String|货币单位|
-|contractAbi|String|智能合约编译后的abi代码|
-|contractAddr|String|代币合约地址|  
+|contractAbi|String|智能合约编译后的abi代码(可选) 注意：添加Erc20的通证时才需要设置|
+|contractAddr|String|代币合约地址(可选)  注意：添加Erc20的通证时才需要设置|  
 
 
 - 请求示例图：
@@ -179,7 +181,6 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
     "success": true
 }
 ```
-
 
 
 ## 官方联系方式
