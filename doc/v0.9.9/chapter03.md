@@ -105,8 +105,8 @@
 |amount|String|支付金额|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
 |memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|
 
 - 请求示例图：
 ---  
@@ -124,7 +124,7 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但交易可能还未写入区块，所以仍在执行中|
 |data|Object|返回数据|
 |data.hash|String|交易返回的hash值|
 - 返回示例图：  
@@ -165,8 +165,8 @@
 |amount|String|支付金额|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
 |memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|
 
 - 请求示例图：
 ---  
@@ -184,7 +184,7 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但交易可能还未写入区块，所以仍在执行中|
 |data|Object|返回数据|
 |data.hash|String|交易返回的hash值|
 - 返回示例图：  
@@ -225,8 +225,8 @@
 |amount|String|支付金额|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
 |memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|
 
 - 请求示例图：
 ---  
@@ -244,7 +244,7 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但交易可能还未写入区块，所以仍在执行中|
 |data|Object|返回数据|
 |data.hash|String|交易返回的hash值|
 - 返回示例图：  
@@ -290,8 +290,8 @@
 |amount|String|支付金额|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
 |memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费价格单位,该gas设置对jingtum公链不起效|
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|
 
 
 - 请求示例图：
@@ -310,7 +310,7 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但交易可能还未写入区块，所以仍在执行中|
 |data|Object|返回数据|
 |data.hash|String|交易返回的hash值|
 - 返回示例图：  
@@ -336,9 +336,6 @@
 
 支付完成之后，通过该接口获取用户钱包中各账户的余额。
 
-<font color=red>
-注意：如果钱包中的账户，在其他平台进行了转账支付，会导致其账户余额与实际余额不一致，此时需要执行“钱包余额同步”接口使其相同。
-</font>
 
 - 接口地址：/v1/wallet/balances  
 
@@ -567,9 +564,6 @@
 
 当外部账户直接在外部（或在调用本平台的账户充值）向本系统用户钱包中的账户进行转账，那么其流水和余额都没有记录在火花链接入平台中，这时需要进行相同同步，本接口是对其余额进行同步，促使火花链接入平台的用户余额和公链上的余额同步。
 
-<font color=red>
-注意：在支付交易未完成的情况下，执行该接口，可能会导致余额和冻结金额不正确。目前这个问题，后期会修复。请尽量在支付交易完成后，执行该接口。
-</font>
 
 - 接口地址：/v1/wallet/syncBalance  
 
@@ -581,7 +575,7 @@
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
 |walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
-|userId|String|二选一】用户Id，walletAddr和userId二选一|
+|userId|String|【二选一】用户Id，walletAddr和userId二选一|
 |chainCode|String|区块链编码|
 |tokenCode|String|通证编码（比如：jingtum的默认通证为SWT)|
 

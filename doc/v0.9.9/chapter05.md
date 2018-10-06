@@ -8,7 +8,7 @@
 * <a href="./chapter05.md#5.2. 绑定多个账户">5.2. 绑定多个账户</a>  <br> 
 
 ### <a name="5. 用户钱包账户关联">5.用户钱包账户关联</a>  
-对于已经有的用户钱包，如果需要和账户的进行关联，或者把账户绑定到指定钱包中，可以调用这些接口进行处理
+对于已经有的用户钱包，如果需要和账户的进行关联，或者把账户绑定到指定钱包中，可以调用这些接口进行处理。
 
 
 ### <a name="5.1. 绑定单个账户">5.1. 绑定单个账户</a> 
@@ -31,7 +31,7 @@
 |chainCode|String|区块链编码|
 |account|String|账户|
 |accountPrivatekey|String|账户的私钥（可选）当账户不属于当前平台，需要有私钥|
-- 请求示例图（先创建一个空钱包）：  使用2.3和2.4中的接口新建空钱包(onlyWallet设置为true)
+- 请求示例图（先创建一个空钱包）：  使用2.4和2.5中的接口新建空钱包(onlyWallet设置为true)
 ---
 ![image](./pics/app_emptyWallet.jpg?raw=true)
 
@@ -84,7 +84,7 @@
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
 |walletAddr|String|钱包地址|
-|accounts|Array|多账户|
+|accounts|list|多账户|
 |chainCode|String|区块链编码|
 |account|String|账户|
 |accountPrivatekey|String|账户的秘钥（可选）|

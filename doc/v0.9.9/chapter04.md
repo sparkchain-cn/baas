@@ -85,14 +85,14 @@
 |tokenCode|String|通证编码|
 |srcAccount|String|充值方的账户|
 |srcPrivateKey|String|充值方的账户私钥|
-|destAccount|String|【三选一】接受方的账户当为空时，（1）可传入destWalletAddr（2）可传入appid,destUserId|
+|destAccount|String|【三选一】接受方的账户 --- 当为空时，（1）可传入destWalletAddr（2）可传入appid,destUserId|
 |destWalletAddr|String|【三选一】接收方的钱包地址|
 |appid|Long|应用Id，和destUserId结合在一起使用|
 |destUserId|String|【三选一】接受方的用户Id|
 |bizId|String|业务ID（每次操作都不能重复，保证事务）|
 |amount|String|充值金额|  
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费单位，,该gas设置对jingtum公链不起效|  
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|  
 
 - 请求示例图：
 ---
@@ -109,8 +109,8 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
-|data|Object|数据|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但交易可能还未写入区块，所以仍在执行中|
+|data|Object|返回数据|
 |data.hash|String|交易返回的hash值|  
 - 返回示例图：
 ---
@@ -151,8 +151,8 @@
 |tokenCode|String|通证编码|
 |memo|String|【可选】记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费单位，,该gas设置对jingtum公链不起效|  
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|  
 - 请求示例图：
 ---
 ![image](./pics/account_transfer.jpg?raw=true)
@@ -169,7 +169,7 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|success|boolean|是否成功（true：成功）---链返回正确的结果，但是交易有可能还在运行中|
+|success|boolean|是否成功（true：成功）---链返回正确的结果，但交易可能还未写入区块，所以仍在执行中|
 |data|Object|数据|
 |data.hash|String|交易返回的hash值|  
 - 返回示例图：
@@ -271,7 +271,7 @@
 - 请求示例代码：
 ---
 ```
-account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86B904669A6C3F913CD5B386EE9A3A9F732D2086337EF5404AC24A0A
+/v1/account/transInfo?account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86B904669A6C3F913CD5B386EE9A3A9F732D2086337EF5404AC24A0A
 ```
 
 - 结果返回参数：  
@@ -321,7 +321,7 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 ### <a name="4.6. 同步流水">4.6. 同步流水</a> 
 [回到顶部](#目录)
 
-当链上的流水和接入平台的流水不同步时，主要发现在其账户在外部进行转入或转出的交易，这时需要调用同步流水，把链上的流水同步到火花接入平台中，然后就可以根据各种不同的条件来进行查询。暂不支持对moac公链的流水同步。
+当链上的流水和接入平台的流水不同步时，比如其账户在外部进行转入或转出的交易，这时需要调用同步流水，把链上的流水同步到火花接入平台中，然后就可以根据各种不同的条件来进行查询。只支持jingtum公链的同步流水。
 - 接口地址：/v1/account/syncWaterflow  
 
 - 请求方式：GET/POST  
@@ -353,15 +353,16 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 |data|list|返回数据|
 |data.destinyPublicKey|String|目标方的公钥|
 |data.tokenCode|String|通证编码|
-|data.tradeTime|String|交易时间|
-|data.createtime|String|创建时间|
-|data.payTime|String|支付时间|
+|data.tradeTime|Date|交易时间|
+|data.createtime|Date|创建时间|
+|data.payTime|Date|支付时间|
 |data.chainCode|String|区块链编码|
-|data.memos|Date|记录内容|
-|data.dispAmount|Date|显示的转账金额|
-|data.state|Integer|状态（8：同步状态）|
-|data.tradeHash|Date|交易的hash|
+|data.memos|String|记录内容|
+|data.dispAmount|String|显示的转账金额|
 |data.srcPublicKey|String|发起方的公钥|
+|data.state|Integer|状态（8：同步状态）|
+|data.tradeHash|String|交易的hash|
+
 
 - 返回示例图：
 ---  
@@ -394,7 +395,7 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 ### <a name="4.7. 获取账户支付历史">4.7. 获取账户支付历史</a>  
 [回到顶部](#目录)
 
-获取指定账户在链上的支付历史，获取之前需要调用同步流水操作，然后再调用该接口。  
+获取指定账户在链上的支付历史。  
 - 接口地址：/v1/account/transInfoList  
 
 - 请求方式：GET/POST  
@@ -499,8 +500,8 @@ account=jDjnjvH62qbFy2SWFZX8S373wqoLJ8MWRa&chainCode=jingtum&tranHash=D56E173D86
 |tokenCode|String|通证编码|
 |memo|String|记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费单位，,该gas设置对jingtum公链不起效|  
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|  
 - 请求示例图：
 ---
 ![image](./pics/account_record.jpg?raw=true)

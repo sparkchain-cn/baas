@@ -209,9 +209,8 @@
 |message|String|返回信息|
 |success|boolean|是否成功（true：成功）|
 |data|Object|返回数据|
-|data.walletAddr|String|钱包地址,通过该地址可以找到账户|
-|data.userId|String|用户Id|
 |data.walletAddr|String|钱包地址|
+|data.userId|String|用户Id|
 |data.password|String|查询密码|
 |data.accounts|list|账户列表|
 |data.accounts.chainCode|String |区块链的编码|
@@ -343,7 +342,7 @@
  选择通证的前提是需要发布第三方通证，可以通过第八章的接口进行发布，也可以在交流群中联系管理员进行后台的发布。  
  如果不发行代币的话或者不使用第三方代币的话，那么就没有必要使用该接口来选择通证，对于原生通证（如moac链对应的MOAC代币及jingtum链对应的SWT代币）在创建App钱包时就已经进行了关联，没有必要再进行选择。  
  <font color=red>
- 注意：执行该接口之前，请先确保对应的区块链已经选择（执行了“选择区块链”接口，或者在创建钱包时已填写了对应的区块链。
+ 注意：执行该接口之前，请先确保对应的区块链已经选择（执行了“选择区块链”接口，或者在创建钱包时已填写了对应的区块链）。
  </font>
 - 接口地址：/v1/app/selectToken  
 
@@ -420,7 +419,7 @@
 | :------------- |:-------------| :-----|
 |code|String|请求结果|
 |message|String|返回信息|
-|data|Object|数据|
+|data|Object|返回数据|
 |success|boolean|是否成功（true：成功）|
 - 返回示例图：  
 ---
@@ -483,8 +482,8 @@
 |data.result.id|String|消息id|
 |data.result.msgs|String|消息内容|
 |data.result.state|Integer|状态|
-|data.result.type|Integer|消息类型|
-|data.result.userId|Integer|用户Id|
+|data.result.type|String|消息类型|
+|data.result.userId|String|用户Id|
 |data.result.viewtime|Long|查看时间|
 - 返回示例图：
 ---
@@ -567,7 +566,7 @@
 |code|String|请求结果|
 |message|String|返回信息|
 |success|boolean|是否成功（true：成功）|
-|data|list|数据|
+|data|list|返回数据|
 |data.tokenCode|String|通证编码|
 |data.chainCode|String|区块链编码|
 - 返回示例图：  

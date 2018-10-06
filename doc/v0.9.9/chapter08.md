@@ -25,7 +25,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
 ### <a name="8.1. 注册区块链[待实现]">8.1. 注册区块链[待实现]</a>  
 [回到顶部](#目录)
 
-如果下载了docker镜像，其默认初始化moac和jingtum链，可以在本地的环境中注册其它区域链，当然需要实现其相关的接口  
+如果下载了docker镜像，其默认初始化moac和jingtum链，可以在本地的环境中注册其它区块链，当然需要实现其相关的接口  
 
 - 接口地址：/v1/sys/registChain  
 

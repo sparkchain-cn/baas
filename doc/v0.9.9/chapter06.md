@@ -15,7 +15,9 @@
 ### <a name="6.1. 文本上链">6.1. 文本上链</a> 
 [回到顶部](#目录)
 
-把指定的文本上链  
+把指定的文本上链。
+
+注意：用moac或eth公链上发行的ERC20代币不能进行文本上链。
 - 接口地址：/v1/text/record
 
 - 请求方式：POST  
@@ -37,9 +39,9 @@
 |destAccount|String|【三选一】接受方的账户（destWalletAddr、destUserId、destAccount）|
 |memo|String|记录内容（提供了敏感词过滤功能，上链时敏感词会转换为*）|
 |bizId|String|业务Id（每次操作都不能重复，保证事务）|
-|amount|String|【可选】金额，执行该接口时，花费的金额，比如：jingtum在文本添加时，不填写该值，会花费1SWT|
-|gasLimit|Long|【可选】Gas的上限倍数,该gas设置对jingtum公链不起效|
-|gasPrice|Long|【可选】Gas计费单位,该gas设置对jingtum公链不起效|
+|amount|String|【可选】金额，执行该接口时，花费的金额，比如：jingtum在文本添加时，不填写该值，会花费1个SWTC|
+|gasLimit|Long|【可选】Gas数的上限值,该gas设置对jingtum公链不起效|
+|gasPrice|Long|【可选】Gas单位价格,该gas设置对jingtum公链不起效|
   
 - 请求示例图： 
 ---
@@ -91,7 +93,7 @@
 | :------------- |:-------------| :-----|
 |accessToken|String|访问凭证|
 |tranHash|String|交易的hash|
-|forceRefresh|boolean|【可选】强制刷新（默认为false，当为false时，获取火花缓存的交易记录，当为true时，直接从链上获取交易记录）|  
+|forceRefresh|boolean|【可选】强制刷新（默认为false，当为false时，获取火花平台缓存的交易记录，当为true时，直接从链上获取交易记录）|  
 - 请求示例图： 
  ---
 ![image](./pics/text_recordInfo.jpg?raw=true)
@@ -113,7 +115,7 @@
 |data.tokenCode|String|通证编码|
 |data.tradeTime|Date|交易时间|
 |data.amount|String|支付金额|
-|data.gasFee|String|交易费用|
+|data.gasFee|Double|交易费用|
 |data.chainCode|String|区块链编码（仅当入参forceRefresh为false时，才返回chainCode）|
 |data.memos|String|记录内容|
 |data.blockNumber|String|区块号（仅当入参forceRefresh为true时，可以获取已写入区块的区块号）|
