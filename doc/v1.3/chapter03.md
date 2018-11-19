@@ -625,60 +625,6 @@
 }
 ```
 
-###  <a name="3.7. 获取钱包账户的私钥">3.7. 获取钱包账户的私钥</a> 
-[回到顶部](#目录)
-
-通过该接口可以获取钱包中某账户的私钥。 
-- 接口地址：/v1/wallet/privatekey  
-
-- 请求方式：GET/POST  
-
-- 接口参数：  
-
-| 参数         | 类型       | 说明   |
-| :------------- |:-------------| :-----|
-|accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
-|userId|String|【二选一】用户Id，walletAddr和userId二选一|
-|payPassword|String|钱包的支付密码|
-|chainCode|String|区块链编码|
-
-- 请求示例图：
----
-![image](./pics/wallet_privatekey.jpg?raw=true)
-- 请求示例代码：
----
-```
-/v1/wallet/privatekey?accessToken=502d3a8a-5d4b-43b3-b4a5-81892cbddd6c&walletAddr=99fcb5c8-ef0c-4ce2-bcbd-de45bf4cda8f&payPassword=654321&chainCode=jingtum
-```
-
-- 结果返回参数：  
-
-| 参数         | 类型       | 说明   |
-| :------------- |:-------------| :-----|
-|code|String|请求结果|
-|message|String|返回信息|
-|success|boolean|是否成功（true：成功）|
-|data|Object|返回数据|
-|data.secret|String|私钥|
-|data.account|String|账户|
-- 返回示例图：
----
-![image](./pics/wallet_privatekey_result.jpg?raw=true)
-
-- 返回示例代码：
----
-```json
-{
-    "code": "200",
-    "data": {
-        "secret": "XXXXX",
-        "account": "j3dxHqSwprSGi3JTCGx81s3ecu2XMV6v51"
-    },
-    "message": "",
-    "success": true
-}
-```
 
 
 
