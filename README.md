@@ -6,8 +6,8 @@
 
 ### <a href="./doc/v1.3/index.md"> 火花链Baas接入平台 2.0Beta 文档</a>
 
-   - 开始支持EOS、XRP、FABRIC链，只在在使用过程中把其chainCode换成eos,xrp,fabric。它们对应的原生token分别为EOS,XRP,SPF。
-   - 细化上链返回状态
+   - 开始支持EOS、XRP、FABRIC链，只需要在使用过程中把其chainCode换成eos,xrp,fabric。它们对应的原生token分别为EOS,XRP,SPF。
+   - 细化上链返回状态。
    - 本版本不再支持接口创建应用，创建应用需要通过console.sparkchain.cn的页面来创建。
    - 为了限制某些应用不正常的访问，本版本对所有的访问加上次数的统计，在不久的将来采用经济手段来限制过大量的访问。
 
