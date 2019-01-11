@@ -36,7 +36,7 @@
 系统域名:[https://dapi.sparkchain.cn](https://dapi.sparkchain.cn)，以下章节中所设计的接口地址都需要在访问时加上该测试系统域名，如接入系统初始化的接口地址为：/v1/app/init，  
 那么在浏览器中则使用[https://dapi.sparkchain.cn/v1/app/init](https://dapi.sparkchain.cn/v1/app/init)即可。 
 
-### **注意：调用接口时，请务必使用https方式，保证传输内容不被篡改。**
+**注意：调用接口时，请务必使用https方式，保证传输内容不被篡改。**
 
 
 <font color=Red> 
