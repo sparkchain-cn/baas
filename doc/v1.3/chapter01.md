@@ -33,8 +33,11 @@
 ### <a name="1.3. 统一说明">1.3. 统一说明</a>  
 
 - 1：接口地址    
- 测试系统域名:[https://dapi.sparkchain.cn](https://dapi.sparkchain.cn)，以下章节中所设计的接口地址都需要在访问时加上该测试系统域名，如接入系统初始化的接口地址为：/v1/app/init，  
+系统域名:[https://dapi.sparkchain.cn](https://dapi.sparkchain.cn)，以下章节中所设计的接口地址都需要在访问时加上该测试系统域名，如接入系统初始化的接口地址为：/v1/app/init，  
 那么在浏览器中则使用[https://dapi.sparkchain.cn/v1/app/init](https://dapi.sparkchain.cn/v1/app/init)即可。 
+
+### **注意：调用接口时，请务必使用https方式，保证传输内容不被篡改。**
+
 
 <font color=Red> 
 注意：如果需要运行在测试公链上，请在设置公链名称时，加上“Test”后缀，比如：公链名称(chainCode)为“jingtum”，那么设置为“jingtumTest”，通证编码（tokenCode）,仍为“SWT”不受影响。测试公链上使用的测试币，可以咨询管理员。
