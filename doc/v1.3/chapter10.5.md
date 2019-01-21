@@ -1,9 +1,9 @@
 #### <a href="./chapter10.md#top">返回上一级目录</a>      
 ---
 ## 5. 柚子公链（eos）
----
 
-**（1）浏览器**
+
+### **（1）浏览器**
 
 正式链：[https://www.eosx.io/monitor](https://www.eosx.io/monitor)
 
@@ -12,22 +12,22 @@
 测试币获取：[https://kylin.eosx.io/tools/account/create](https://kylin.eosx.io/tools/account/create)
 
 
-**（2）保留的小数位数**：4
+### **（2）保留的小数位数**：4
 
-**（3）火花平台接口的参数，使用条件和限制**：
+### **（3）火花平台接口的参数，使用条件和限制**：
 
-* 参数：chainCode（公链编码）
+* **参数：chainCode（公链编码）**
 
 	* 正式链（使用正式币）：eos
 
 	* 测试链（使用测试币）：eosTest
 
-* 参数：tokenCode（通证编码）
+* **参数：tokenCode（通证编码）**
 
 	* 原生的通证（币）：EOS
 
 	
-* 转账上链的gas费用（gasFee）
+* **转账上链的gas费用（gasFee）**
 
 	* 没有gas费用
 	
@@ -37,7 +37,7 @@
 	
 * 转账上链成功的币数条件：转账币数>0
 
-* memo长度限制
+* **memo长度限制**
 
 	单字节文字数：200个
 
