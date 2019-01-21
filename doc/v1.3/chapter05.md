@@ -154,7 +154,7 @@ accounts:[{chainCode:"moac",account:"0x194a45117c23bb2adca4ee51b7df3c12a2804c47"
   欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
 
 ### 官方技术BAAS平台
-  欢迎大家到<a href="http://baas.sparkchain.cn/">火花链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
+  欢迎大家到<a href="http://baas.sparkchain.cn/">火花区块链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
 
 
 ## 第三方合作伙伴

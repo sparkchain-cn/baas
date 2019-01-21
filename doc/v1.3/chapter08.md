@@ -196,7 +196,7 @@ docker run -d --name moac_node_java_mysql_redis -p 8545:8545 -p 3306:3306 -p 637
   欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
 
 ### 官方技术BAAS平台
-  欢迎大家到<a href="http://baas.sparkchain.cn/">火花链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
+  欢迎大家到<a href="http://baas.sparkchain.cn/">火花区块链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
 
 
 ## 第三方合作伙伴
