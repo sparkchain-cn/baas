@@ -67,7 +67,8 @@
 * <a href="./chapter08.md#8.2. 新增通证">8.2. 新增通证</a>  <br>
 * <a href="./chapter08.md#8.3. 添加通证">8.3. 添加通证</a>  <br>
 
-<a href="./chapter09.md">9. AccessToken获取简单示例  </a> <br>
+<a href="./chapter09.md">附件1. AccessToken获取简单示例  </a> <br>
+<a href="./chapter10.md">附件2. 各公链的使用说明  </a> <br>
 
 
 
