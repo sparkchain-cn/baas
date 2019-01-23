@@ -56,8 +56,8 @@ Code：接口处理的标识，其中 成功：200, 请求失败: 400，未认�
 Message：返回的消息，主要是指错误的返回信息，对于正确的返回，也有可能会给出一些提示信息和警告信息。Data:返回的业务数据。  
 
 - 3：问题及沟通
- 火花区块链BaaS开发者QQ总群：594629943  
- 火花区块链BaaS开发者微信群，扫下方二维码加好友，备注火花区块链BaaS开发，然后拉进群。  <div align=center>
+ 火花区块链开发者QQ总群：594629943  
+ 火花区块链开发者微信群，扫下方二维码加好友，备注火花区块链开发，然后拉进群。  
 ![image](./pics/wechat.jpg?raw=true)
 ---
 
@@ -70,12 +70,6 @@ Message：返回的消息，主要是指错误的返回信息，对于正确的�
 
 ![QQ群：594629943](../sp.png)
 
-### 官方技术交流论坛
-  欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
-
-### 官方技术BAAS平台
-  欢迎大家到<a href="http://baas.sparkchain.cn/">火花区块链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
-
 
 ## 第三方合作伙伴
 
@@ -83,9 +77,3 @@ Message：返回的消息，主要是指错误的返回信息，对于正确的�
 
  - <a href="http://www.moac.io/">MOAC</a>,github地址为：ttps://github.com/MOACChain/,开发者文档地址：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 ,浏览器地址：http://explorer.moac.io/home
 
- - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
-
- ![QQ群：805362142](../nc.png)
-
-
-<a href="./index.md#top">返回主目录</a>  <br>

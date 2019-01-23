@@ -635,12 +635,6 @@
 
 ![QQ群：594629943](../sp.png)
 
-### 官方技术交流论坛
-  欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
-
-### 官方技术BAAS平台
-  欢迎大家到<a href="http://baas.sparkchain.cn/">火花区块链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
-
 
 ## 第三方合作伙伴
 
@@ -648,8 +642,3 @@
 
  - <a href="http://www.moac.io/">MOAC</a>,github地址为：ttps://github.com/MOACChain/,开发者文档地址：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 ,浏览器地址：http://explorer.moac.io/home
 
- - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
-
- ![QQ群：805362142](../nc.png)
-
-<a href="./index.md#top">返回主目录</a>  <br>

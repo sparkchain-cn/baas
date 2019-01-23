@@ -4,7 +4,7 @@ SBAP provides a service for the industry projects to access the main blockchains
 
 ## Versions
 
-<!-- ### <a href="./doc/v0.9.8/index.md"> 火花链BaaS接入平台 0.9.8版API文档</a> -->
+<!-- ### <a href="./doc/v0.9.8/index.md"> 火花区块链接入平台 0.9.8版API文档</a> -->
    - basic interface for transfering, writing text to the blockchain
    - switch blockchains within a method
    - interface for querying the waterflows
@@ -20,15 +20,8 @@ SBAP provides a service for the industry projects to access the main blockchains
 
 ## Contact
 
-### Backup QQGroup
-  594629943
+### Backup QQGroup: 594629943
 ![QQ Group：594629943](./doc/sp.png)
-
-### Offical support forum
-  Welcome to <a href="http://sparkda.com/">Sparkda</a>to ask any questions.
-
-### Offical BAAS Platform
-  Welcome to <a href="http://baas.sparkchain.cn/">Sparkchain BaaS Platform</a> to find more interesting Dapps（Developing）
 
 
 ## Partners
@@ -36,7 +29,3 @@ SBAP provides a service for the industry projects to access the main blockchains
  - <a href="https://www.jingtum.com/">Jingtum Tech</a>,github：https://github.com/swtcpro ，Docs：http://developer.jingtum.com/  Explorer：http://state.jingtum.com
 
  - <a href="http://www.moac.io/">MOAC</a>,github：ttps://github.com/MOACChain/,Docs：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 , Explorer：http://explorer.moac.io/home
-
- - Nanchang developer community, github:https://github.com/moacDapp/ ,QQ Group：805362142
-
- ![QQ Group：805362142](./doc/nc.png)

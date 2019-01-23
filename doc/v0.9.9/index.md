@@ -1,13 +1,13 @@
-## 火花链Baas接入平台 0.9.9 文档
+## 火花区块链接入平台 0.9.9 文档
 
-火花链接入平台是对接于各行各业应用和各大公链之间的接入平台，采用一系列技术来提高公链的接入TPS，并统一公链之间的接入差异，简化应用的区块链接入，使得一套接口能快速在各种不同公链之间进行切换或进行跨链交易。
+火花区块链接入平台是对接于各行各业应用和各大公链之间的接入平台，采用一系列技术来提高公链的接入TPS，并统一公链之间的接入差异，简化应用的区块链接入，使得一套接口能快速在各种不同公链之间进行切换或进行跨链交易。
 
    - 提供获取应用的区块链信息接口
    - 提供账户的文本上链接口
    - 丰富了创建钱包的返回信息
    - 提供了“获取账户支付信息”，“获取钱包支付信息”和“查询文本内容”接口写入区块号的返回
    
-### 火花链BaaS接入平台 0.9.9版API目录
+### 火花区块链接入平台 0.9.9版API目录
 <a href="./chapter01.md#1. 引言">1. 引言</a>  <br>
 * <a href="./chapter01.md#1.1. 概述">1.1. 概述</a>  <br>
 * <a href="./chapter01.md#1.2. 名词解释">1.2. 名词解释</a>  <br>
@@ -80,19 +80,9 @@
 
 ![QQ群：594629943](../sp.png)
 
-### 官方技术交流论坛
-  欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
-
-### 官方技术BAAS平台
-  欢迎大家到<a href="http://baas.sparkchain.cn/">火花链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
-
 
 ## 第三方合作伙伴
 
  - <a href="https://www.jingtum.com/">井通科技</a>,github地址为：https://github.com/swtcpro ，开发者文档地址：http://developer.jingtum.com/  浏览器地址：http://state.jingtum.com
 
  - <a href="http://www.moac.io/">MOAC</a>,github地址为：ttps://github.com/MOACChain/,开发者文档地址：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 ,浏览器地址：http://explorer.moac.io/home
-
- - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
-
- ![QQ群：805362142](../nc.png)

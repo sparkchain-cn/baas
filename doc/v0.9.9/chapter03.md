@@ -14,8 +14,7 @@
 * <a href="./chapter03.md#3.4. 获得支付信息">3.4. 获得支付信息</a>  <br>
 * <a href="./chapter03.md#3.5. 获得支付历史">3.5. 获得支付历史</a>  <br>
 * <a href="./chapter03.md#3.6. 钱包余额同步">3.6. 钱包余额同步</a>  <br>
-* <a href="./chapter03.md#3.7. 获取钱包账户的信息">3.7. 获取钱包账户的信息</a> <br>
-* <a href="./chapter03.md#3.8. 获取钱包账户的私钥">3.8. 获取钱包账户的私钥(新加)</a> <br>
+* <a href="./chapter03.md#3.7. 获取钱包账户的信息">3.7. 获取钱包账户的信息</a> 
 
 ## <a name="3. 用户钱包操作接口">3. 用户钱包操作接口</a>   
 
@@ -475,7 +474,7 @@
 ### <a name="3.5. 获得支付历史">3.5. 获得支付历史</a>
 [回到顶部](#目录)
 
-通过该接口可以获取后用户通过火花链接入平台进行转账的所有流水。如果用户钱包中账户在接入平台外部进行转账，那么就需要通过账户的“同步流水”接口先做同步，然后获得钱包的所有流水（包括外部转账的流水)  
+通过该接口可以获取后用户通过火花区块链接入平台进行转账的所有流水。如果用户钱包中账户在接入平台外部进行转账，那么就需要通过账户的“同步流水”接口先做同步，然后获得钱包的所有流水（包括外部转账的流水)  
 - 接口地址：/v1/wallet/transInfoList  
 
 - 请求方式：GET/POST  
@@ -562,7 +561,7 @@
 ### <a name="3.6. 钱包余额同步">3.6. 钱包余额同步</a>
 [回到顶部](#目录)
 
-当外部账户直接在外部（或在调用本平台的账户充值）向本系统用户钱包中的账户进行转账，那么其流水和余额都没有记录在火花链接入平台中，这时需要进行相同同步，本接口是对其余额进行同步，促使火花链接入平台的用户余额和公链上的余额同步。
+当外部账户直接在外部（或在调用本平台的账户充值）向本系统用户钱包中的账户进行转账，那么其流水和余额都没有记录在火花区块链接入平台中，这时需要进行相同同步，本接口是对其余额进行同步，促使火花区块链接入平台的用户余额和公链上的余额同步。
 
 
 - 接口地址：/v1/wallet/syncBalance  
@@ -688,62 +687,6 @@
 }
 ```
 
-###  <a name="3.8. 获取钱包账户的私钥">3.8. 获取钱包账户的私钥</a> 
-[回到顶部](#目录)
-
-通过该接口可以获取钱包中某账户的私钥。 
-- 接口地址：/v1/wallet/privatekey  
-
-- 请求方式：GET/POST  
-
-- 接口参数：  
-
-| 参数         | 类型       | 说明   |
-| :------------- |:-------------| :-----|
-|accessToken|String|访问凭证|
-|walletAddr|String|【二选一】钱包地址，walletAddr和userId二选一|
-|userId|String|【二选一】用户Id，walletAddr和userId二选一|
-|payPassword|String|钱包的支付密码|
-|chainCode|String|区块链编码|
-
-- 请求示例图：
----
-![image](./pics/wallet_privatekey.jpg?raw=true)
-- 请求示例代码：
----
-```
-/v1/wallet/privatekey?accessToken=502d3a8a-5d4b-43b3-b4a5-81892cbddd6c&walletAddr=99fcb5c8-ef0c-4ce2-bcbd-de45bf4cda8f&payPassword=654321&chainCode=jingtum
-```
-
-- 结果返回参数：  
-
-| 参数         | 类型       | 说明   |
-| :------------- |:-------------| :-----|
-|code|String|请求结果|
-|message|String|返回信息|
-|success|boolean|是否成功（true：成功）|
-|data|Object|返回数据|
-|data.secret|String|私钥|
-|data.account|String|账户|
-- 返回示例图：
----
-![image](./pics/wallet_privatekey_result.jpg?raw=true)
-
-- 返回示例代码：
----
-```json
-{
-    "code": "200",
-    "data": {
-        "secret": "XXXXX",
-        "account": "j3dxHqSwprSGi3JTCGx81s3ecu2XMV6v51"
-    },
-    "message": "",
-    "success": true
-}
-```
-
-
 
 
 ## 官方联系方式
@@ -752,12 +695,6 @@
 
 ![QQ群：594629943](../sp.png)
 
-### 官方技术交流论坛
-  欢迎大家到<a href="http://sparkda.com/">斯巴达论坛</a>进行提问及交流 
-
-### 官方技术BAAS平台
-  欢迎大家到<a href="http://baas.sparkchain.cn/">火花链BaaS平台</a>发现更多好玩的Dapp（目前正开发中）
-
 
 ## 第三方合作伙伴
 
@@ -765,8 +702,3 @@
 
  - <a href="http://www.moac.io/">MOAC</a>,github地址为：ttps://github.com/MOACChain/,开发者文档地址：https://github.com/MOACChain/moac-core/wiki/Commands ,https://github.com/MOACChain/moac-core/wiki/Chain3 ,浏览器地址：http://explorer.moac.io/home
 
- - 南昌技术开发团队,github地址为:https://github.com/moacDapp/ ,QQ群：
-
- ![QQ群：805362142](../nc.png)
-
-<a href="./index.md#top">返回主目录</a>  <br>
