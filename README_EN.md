@@ -4,12 +4,6 @@ SBAP provides a service for the industry projects to access the main blockchains
 
 ## Versions
 
-<!-- ### <a href="./doc/v0.9.8/index.md"> 火花区块链接入平台 0.9.8版API文档</a> -->
-   - basic interface for transfering, writing text to the blockchain
-   - switch blockchains within a method
-   - interface for querying the waterflows
-   - function for sensitive words filtering
-
 ## Sample
 
  - Oath Wall：Simple H5 application run on the weixin platform，https://github.com/moacDapp/oathWall
